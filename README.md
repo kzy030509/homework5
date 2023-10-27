@@ -22,31 +22,31 @@ main(MergeDriver.java)如下
 
 主要进行了任务分配，设置输出键值对格式，设置输入输出路径
 
-![image-20231026225325455](C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\image-20231026225325455.png)
+![image-20231026225325455]([C:\Users\lenovo\AppData\Roaming\Typora\](https://github.com/kzy030509/homework5/blob/master/)typora-user-images/image-20231026225325455.png)
 
 map(MergeMapper.java)如下：
 
 主要是对输入文件每行分成了一对键值对，并写入context
 
-![image-20231026230634999](C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\image-20231026230634999.png)
+![image-20231026230634999]([C:\Users\lenovo\AppData\Roaming\Typora\](https://github.com/kzy030509/homework5/blob/master/)typora-user-images/image-20231026230634999.png)
 
 reduce(MergeReducer.java)如下：
 
 主要通过set这个数据结构对每个日期下的value进行排序与去重
 
-![image-20231026231843169](C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\image-20231026231843169.png)
+![image-20231026231843169]([C:\Users\lenovo\AppData\Roaming\Typora](https://github.com/kzy030509/homework5/blob/master/)typora-user-images/image-20231026231843169.png)
 
 ### 三、其它讨论
 
-![image-20231026235001740](C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\image-20231026235001740.png)
+![image-20231026235001740]([C:\Users\lenovo\AppData\Roaming\Typora\](https://github.com/kzy030509/homework5/blob/master/)typora-user-images/image-20231026235001740.png)
 
 输出结果如上图，符合预期
 
 接下来查看WEB端yarn调度各nodes的情况
 
-![image-20231027100653400](C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\image-20231027100653400.png)
+![image-20231027100653400]([C:\Users\lenovo\AppData\Roaming\Typora\](https://github.com/kzy030509/homework5/blob/master/)typora-user-images/image-20231027100653400.png)
 
-![image-20231027100935083](C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\image-20231027100935083.png)
+![image-20231027100935083]([C:\Users\lenovo\AppData\Roaming\Typora\](https://github.com/kzy030509/homework5/blob/master/)typora-user-images/image-20231027100935083.png)
 
 可见yarn也工作正常
 
@@ -62,7 +62,7 @@ reduce(MergeReducer.java)如下：
 
 接着还处理了一些历史遗留问题：、
 
-![image-20231027101308856](C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\image-20231027101308856.png)
+![image-20231027101308856]([C:\Users\lenovo\AppData\Roaming\Typora\](https://github.com/kzy030509/homework5/blob/master/)typora-user-images/image-20231027101308856.png)
 
 之前磁盘空间分配不够，但在实验1这个问题还没有反应出来，在本次作业却体现得淋漓尽致
 
